@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dr.You","sameAs":["https://github.com/DrYouLab/DrYou.github.io"],"image":"you.jpg"},"articleBody":"Juicer:Hi-C数据处理分析的利器\n\n\n\n\n\n通过Hi-C数据可以分析TAD,chromatin loops等染色质空间结构的基本单元，加强我们对染色质三维结构的认知。面对海量的Hi-C数据，如何高效完成数据分析成为了一个挑战。\n目前针对Hi-C数据的分析也有很多的软件可以用，而juicer无疑是使用的最广泛的软件之一。该软件的源代码托管在github上，网址如下\nhttps://github.com/aidenlab/juicer\n对应的文章发表在cell杂志上，链接如下\nhttps://www.cell.com/action/showPdf?pii=S2405-4712%2816%2930219-8\n如下图所示，和其名字一样，juicer就像是一款榨汁机，输入Hi-C产生的原始fastq数据，经过层层加工，直到产生有效的数据分析结果。在整个数据分析过程中，使用者不需要高深的编程技巧，只需要一些基本的操作规范，人人都可以使用该软件来分析Hi-C数据。\n\n\njuicer作为一款强大的分析软件，有以下几个特点:\n\n可以分析处理TB级别的海量数据，可以有效利用FPGA, GPU，集群等硬件资源来加速处理速度\n\n提供了数据预处理，交互图谱创建和可视化，TAD和染色质环结构预测等一些列完整的pipeline\n\n简单易用，不需要复杂的背景知识该软件按照功能拆分成了三个大的分析步骤，依次运行即可得到最终的分析结果:\n\n数据预处理，将原始的fastq序列比对参考基因组，识别其中的valid pairs, 并生成一个后缀为hic的文件\n\n读取hic文件，创建可视化的交互图谱，也称之为contact map, 并进行归一化\n\n采用算法预测TAD和染色质环等结构完整功能示意如下：\n\n\n\n\njuicer采用ArrowHead算法对原始的交互矩阵进行转化，并预测TAD拓扑关联结构域，采用HiCUUPS算法识别染色质环chromatin loops。和其他Hi-C数据处理软件相比，juicer的功能更为齐全\n\njuicer独创了一种名为hic的文件格式，用来存储Hi-C数据的相关信息，这种格式是一种高度压缩的二进制文件格式，在以下链接可以查看这种格式的详细信息\nhttps://github.com/theaidenlab/juicebox/blob/master/HiC_format_v8.docx\n在后续的文章中，会详细介绍该软件的用法。\n","dateCreated":"2019-11-02T22:50:11+08:00","dateModified":"2019-11-04T14:43:15+08:00","datePublished":"2019-11-02T22:50:11+08:00","description":"Juicer:Hi-C数据处理分析的利器","headline":"Juicer:Hi-C数据处理分析的利器","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://youlab19.github.io/2019-11-02-Juicer-Hi-C%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E7%9A%84%E5%88%A9%E5%99%A8/"},"publisher":{"@type":"Organization","name":"Dr.You","sameAs":["https://github.com/DrYouLab/DrYou.github.io"],"image":"you.jpg","logo":{"@type":"ImageObject","url":"you.jpg"}},"url":"https://youlab19.github.io/2019-11-02-Juicer-Hi-C%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E7%9A%84%E5%88%A9%E5%99%A8/","keywords":"Hi-C, Juicer"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dr.You","sameAs":["https://github.com/YouLab19/Youlab19.github.io"],"image":"you.jpg"},"articleBody":"Juicer:Hi-C数据处理分析的利器\n\n\n\n\n\n通过Hi-C数据可以分析TAD,chromatin loops等染色质空间结构的基本单元，加强我们对染色质三维结构的认知。面对海量的Hi-C数据，如何高效完成数据分析成为了一个挑战。\n目前针对Hi-C数据的分析也有很多的软件可以用，而juicer无疑是使用的最广泛的软件之一。该软件的源代码托管在github上，网址如下\nhttps://github.com/aidenlab/juicer\n对应的文章发表在cell杂志上，链接如下\nhttps://www.cell.com/action/showPdf?pii=S2405-4712%2816%2930219-8\n如下图所示，和其名字一样，juicer就像是一款榨汁机，输入Hi-C产生的原始fastq数据，经过层层加工，直到产生有效的数据分析结果。在整个数据分析过程中，使用者不需要高深的编程技巧，只需要一些基本的操作规范，人人都可以使用该软件来分析Hi-C数据。\n\n\njuicer作为一款强大的分析软件，有以下几个特点:\n\n可以分析处理TB级别的海量数据，可以有效利用FPGA, GPU，集群等硬件资源来加速处理速度\n\n提供了数据预处理，交互图谱创建和可视化，TAD和染色质环结构预测等一些列完整的pipeline\n\n简单易用，不需要复杂的背景知识该软件按照功能拆分成了三个大的分析步骤，依次运行即可得到最终的分析结果:\n\n数据预处理，将原始的fastq序列比对参考基因组，识别其中的valid pairs, 并生成一个后缀为hic的文件\n\n读取hic文件，创建可视化的交互图谱，也称之为contact map, 并进行归一化\n\n采用算法预测TAD和染色质环等结构完整功能示意如下：\n\n\n\n\njuicer采用ArrowHead算法对原始的交互矩阵进行转化，并预测TAD拓扑关联结构域，采用HiCUUPS算法识别染色质环chromatin loops。和其他Hi-C数据处理软件相比，juicer的功能更为齐全\n\njuicer独创了一种名为hic的文件格式，用来存储Hi-C数据的相关信息，这种格式是一种高度压缩的二进制文件格式，在以下链接可以查看这种格式的详细信息\nhttps://github.com/theaidenlab/juicebox/blob/master/HiC_format_v8.docx\n在后续的文章中，会详细介绍该软件的用法。\n","dateCreated":"2019-11-02T22:50:11+08:00","dateModified":"2019-11-04T14:43:15+08:00","datePublished":"2019-11-02T22:50:11+08:00","description":"Juicer:Hi-C数据处理分析的利器","headline":"Juicer:Hi-C数据处理分析的利器","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://youlab19.github.io/2019-11-02-Juicer-Hi-C%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E7%9A%84%E5%88%A9%E5%99%A8/"},"publisher":{"@type":"Organization","name":"Dr.You","sameAs":["https://github.com/YouLab19/Youlab19.github.io"],"image":"you.jpg","logo":{"@type":"ImageObject","url":"you.jpg"}},"url":"https://youlab19.github.io/2019-11-02-Juicer-Hi-C%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E7%9A%84%E5%88%A9%E5%99%A8/","keywords":"Hi-C, Juicer"}</script>
     <meta name="description" content="Juicer:Hi-C数据处理分析的利器">
 <meta name="keywords" content="Hi-C,Juicer">
 <meta property="og:type" content="blog">
@@ -181,7 +181,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://github.com/DrYouLab/DrYou.github.io" target="_blank" rel="noopener" title="GitHub">
+                        <a  class="sidebar-button-link " href="https://github.com/YouLab19/Youlab19.github.io" target="_blank" rel="noopener" title="GitHub">
                     
                         <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
@@ -337,7 +337,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Share this post"
+                aria-label="Diesen Beitrag teilen"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
@@ -461,7 +461,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Share this post"
+                aria-label="Diesen Beitrag teilen"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>

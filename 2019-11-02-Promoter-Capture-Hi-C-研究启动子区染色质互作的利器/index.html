@@ -15,7 +15,7 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dr.You","sameAs":["https://github.com/DrYouLab/DrYou.github.io"],"image":"you.jpg"},"articleBody":"Promoter Capture Hi-C:研究启动子区染色质互作的利器\n\n\n\n\n\nHi-C文库一次可以获取全基因组范围内互作的染色质片段，可以从全基因组的高度来研究染色质的空间结构特征。在Hi-C图谱中，染色质互作频率通过两个bin之间junction reads的数量来表示，和测序深度的概念类似，只有达到一定量的测序深度时才能够认为其代表的染色质互作信息是可靠的。\n通常情况下，可以用于构建Hi-C图谱的有效reads的比例在50%左右，这样的一个利用率就要求原始的测序量相比其他组学要更多。\n同时对于Hi-C图谱又有一个分辨率的说法，不同分辨率用于分析和识别不同层级的染色质结构，目前一个常用的说法是只有保证80%的bin之间的junction reads的个数在1000以上时，才表明数据适用于bin长度对应的分辨率。\n目前测序深度和分辨率之间并没有一个明确的对应关系，根据经验值，测序深度在100X时，分辨率可以得到40kb左右，这样的一个分辨率也仅仅能达到TAD分析的要求，25kb和5kb分辨率对于测序深度的要求就更高了。\n实验有效率和数据分辨率的要求都使得Hi-C文库的测序量必须非常的大，这样仅仅测序成本就非常的高了。\n如果仅仅只是分析部分染色质片段之间的互作，最经典的莫过于研究promoter与其他染色质片段的互作，比如研究enhancer-promoter的互作，此时利用全基因组的Hi-C文库代价太大，而传统的3C,4C又无法满足要求。基于这样的一个需求驱动，Promoter Capture Hi-C技术应用而生。\nCapture Hi-C技术就是在传统Hi-C文库的基础上，新增了一个捕获的过程，捕获目的片段用于后续的测序。Hi-C和Capture Hi-C的关系就好比全基因组测序和全外显子测序，Hi-C可以得到更加全面的信息，但是代价高昂，而Capture Hi-C只针对目标区域进行研究，同样的测序成本可以达到更高的测序深度，信息更加可靠，更加经济适用。\nPromoter Capture Hi-C的文库构建示意如下:\n\n\n核心就是在Hi-C文库之后，用设计的探针捕获promoter相关的reads,然后在进行测序。在测序深度足够的情况下，可以直接得到启动子区与其他染色质片段互作的可靠信息。\n如果只想通过Hi-C技术来研究启动子的互作，Promoter Capture Hi-C无疑是更好的选择。\n","dateCreated":"2019-11-02T22:49:38+08:00","dateModified":"2019-11-04T14:49:50+08:00","datePublished":"2019-11-02T22:49:38+08:00","description":"Promoter Capture Hi-C:研究启动子区染色质互作的利器","headline":"Promoter Capture Hi-C:研究启动子区染色质互作的利器","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://youlab19.github.io/2019-11-02-Promoter-Capture-Hi-C-%E7%A0%94%E7%A9%B6%E5%90%AF%E5%8A%A8%E5%AD%90%E5%8C%BA%E6%9F%93%E8%89%B2%E8%B4%A8%E4%BA%92%E4%BD%9C%E7%9A%84%E5%88%A9%E5%99%A8/"},"publisher":{"@type":"Organization","name":"Dr.You","sameAs":["https://github.com/DrYouLab/DrYou.github.io"],"image":"you.jpg","logo":{"@type":"ImageObject","url":"you.jpg"}},"url":"https://youlab19.github.io/2019-11-02-Promoter-Capture-Hi-C-%E7%A0%94%E7%A9%B6%E5%90%AF%E5%8A%A8%E5%AD%90%E5%8C%BA%E6%9F%93%E8%89%B2%E8%B4%A8%E4%BA%92%E4%BD%9C%E7%9A%84%E5%88%A9%E5%99%A8/","keywords":"Hi-C, Promoter Capture Hi-C, 启动子区染色质互作"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dr.You","sameAs":["https://github.com/YouLab19/Youlab19.github.io"],"image":"you.jpg"},"articleBody":"Promoter Capture Hi-C:研究启动子区染色质互作的利器\n\n\n\n\n\nHi-C文库一次可以获取全基因组范围内互作的染色质片段，可以从全基因组的高度来研究染色质的空间结构特征。在Hi-C图谱中，染色质互作频率通过两个bin之间junction reads的数量来表示，和测序深度的概念类似，只有达到一定量的测序深度时才能够认为其代表的染色质互作信息是可靠的。\n通常情况下，可以用于构建Hi-C图谱的有效reads的比例在50%左右，这样的一个利用率就要求原始的测序量相比其他组学要更多。\n同时对于Hi-C图谱又有一个分辨率的说法，不同分辨率用于分析和识别不同层级的染色质结构，目前一个常用的说法是只有保证80%的bin之间的junction reads的个数在1000以上时，才表明数据适用于bin长度对应的分辨率。\n目前测序深度和分辨率之间并没有一个明确的对应关系，根据经验值，测序深度在100X时，分辨率可以得到40kb左右，这样的一个分辨率也仅仅能达到TAD分析的要求，25kb和5kb分辨率对于测序深度的要求就更高了。\n实验有效率和数据分辨率的要求都使得Hi-C文库的测序量必须非常的大，这样仅仅测序成本就非常的高了。\n如果仅仅只是分析部分染色质片段之间的互作，最经典的莫过于研究promoter与其他染色质片段的互作，比如研究enhancer-promoter的互作，此时利用全基因组的Hi-C文库代价太大，而传统的3C,4C又无法满足要求。基于这样的一个需求驱动，Promoter Capture Hi-C技术应用而生。\nCapture Hi-C技术就是在传统Hi-C文库的基础上，新增了一个捕获的过程，捕获目的片段用于后续的测序。Hi-C和Capture Hi-C的关系就好比全基因组测序和全外显子测序，Hi-C可以得到更加全面的信息，但是代价高昂，而Capture Hi-C只针对目标区域进行研究，同样的测序成本可以达到更高的测序深度，信息更加可靠，更加经济适用。\nPromoter Capture Hi-C的文库构建示意如下:\n\n\n核心就是在Hi-C文库之后，用设计的探针捕获promoter相关的reads,然后在进行测序。在测序深度足够的情况下，可以直接得到启动子区与其他染色质片段互作的可靠信息。\n如果只想通过Hi-C技术来研究启动子的互作，Promoter Capture Hi-C无疑是更好的选择。\n","dateCreated":"2019-11-02T22:49:38+08:00","dateModified":"2019-11-04T14:49:50+08:00","datePublished":"2019-11-02T22:49:38+08:00","description":"Promoter Capture Hi-C:研究启动子区染色质互作的利器","headline":"Promoter Capture Hi-C:研究启动子区染色质互作的利器","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://youlab19.github.io/2019-11-02-Promoter-Capture-Hi-C-%E7%A0%94%E7%A9%B6%E5%90%AF%E5%8A%A8%E5%AD%90%E5%8C%BA%E6%9F%93%E8%89%B2%E8%B4%A8%E4%BA%92%E4%BD%9C%E7%9A%84%E5%88%A9%E5%99%A8/"},"publisher":{"@type":"Organization","name":"Dr.You","sameAs":["https://github.com/YouLab19/Youlab19.github.io"],"image":"you.jpg","logo":{"@type":"ImageObject","url":"you.jpg"}},"url":"https://youlab19.github.io/2019-11-02-Promoter-Capture-Hi-C-%E7%A0%94%E7%A9%B6%E5%90%AF%E5%8A%A8%E5%AD%90%E5%8C%BA%E6%9F%93%E8%89%B2%E8%B4%A8%E4%BA%92%E4%BD%9C%E7%9A%84%E5%88%A9%E5%99%A8/","keywords":"Hi-C, Promoter Capture Hi-C, 启动子区染色质互作"}</script>
     <meta name="description" content="Promoter Capture Hi-C:研究启动子区染色质互作的利器">
 <meta name="keywords" content="Hi-C,Promoter Capture Hi-C,启动子区染色质互作">
 <meta property="og:type" content="blog">
@@ -179,7 +179,7 @@
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://github.com/DrYouLab/DrYou.github.io" target="_blank" rel="noopener" title="GitHub">
+                        <a  class="sidebar-button-link " href="https://github.com/YouLab19/Youlab19.github.io" target="_blank" rel="noopener" title="GitHub">
                     
                         <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
@@ -317,7 +317,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Share this post"
+                aria-label="Diesen Beitrag teilen"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
@@ -441,7 +441,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Share this post"
+                aria-label="Diesen Beitrag teilen"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
