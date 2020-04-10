@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>You&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://YouLab19.github.io/"/>
+  <updated>2020-01-02T08:50:57.149Z</updated>
+  <id>https://YouLab19.github.io/</id>
+  
+  <author>
+    <name>Dr.You</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>芯片探针序列的基因组注释</title>
+    <link href="https://YouLab19.github.io/2020-01-02-%E8%8A%AF%E7%89%87%E6%8E%A2%E9%92%88%E5%BA%8F%E5%88%97%E7%9A%84%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B3%A8%E9%87%8A/"/>
+    <id>https://YouLab19.github.io/2020-01-02-芯片探针序列的基因组注释/</id>
+    <published>2020-01-02T08:50:57.000Z</published>
+    <updated>2020-01-02T08:50:57.149Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+
+&lt;!-- toc
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>miRNA数据分析专题</title>
+    <link href="https://YouLab19.github.io/2019-12-31-miRNA%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%93%E9%A2%98/"/>
+    <id>https://YouLab19.github.io/2019-12-31-miRNA数据分析专题/</id>
+    <published>2019-12-31T08:44:43.000Z</published>
+    <updated>2019-12-31T08:53:30.801Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;miRNA数据分析专题&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="miRNA数据分析" scheme="https://YouLab19.github.io/all-categories/miRNA%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="miRNA数据分析" scheme="https://YouLab19.github.io/all-tags/miRNA%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>single cell数据分析专题</title>
+    <link href="https://YouLab19.github.io/2019-12-20-%E5%8D%95%E7%BB%86%E8%83%9E%E8%BD%AC%E5%BD%95%E7%BB%84%E6%B5%8B%E5%BA%8F%E5%88%86%E6%9E%90%E4%B8%93%E9%A2%98/"/>
+    <id>https://YouLab19.github.io/2019-12-20-单细胞转录组测序分析专题/</id>
+    <published>2019-12-20T11:54:18.000Z</published>
+    <updated>2019-12-31T08:58:49.786Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;单细胞转录组数据分析专题&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="single cell数据分析" scheme="https://YouLab19.github.io/all-categories/single-cell%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="scRNA_seq" scheme="https://YouLab19.github.io/all-tags/scRNA-seq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>sci-hub客户端V5.0</title>
+    <link href="https://YouLab19.github.io/2019-11-04-sci-hub%E5%AE%A2%E6%88%B7%E7%AB%AFV5-0/"/>
+    <id>https://YouLab19.github.io/2019-11-04-sci-hub客户端V5-0/</id>
+    <published>2019-11-04T05:49:23.000Z</published>
+    <updated>2019-12-31T09:01:46.483Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SCI-HUB客户端 V5.0版强势来袭，免费下载99.9%的文献~&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="sci-hub" scheme="https://YouLab19.github.io/all-categories/sci-hub/"/>
+    
+    
+      <category term="sci-hub" scheme="https://YouLab19.github.io/all-tags/sci-hub/"/>
+    
+      <category term="免费下载文献" scheme="https://YouLab19.github.io/all-tags/%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E6%96%87%E7%8C%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Juicer软件的安装详解</title>
+    <link href="https://YouLab19.github.io/2019-11-02-Juicer%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://YouLab19.github.io/2019-11-02-Juicer软件的安装详解/</id>
+    <published>2019-11-02T14:50:28.000Z</published>
+    <updated>2019-11-04T01:29:55.923Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Juicer软件的安装详解&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="Juicer" scheme="https://YouLab19.github.io/all-tags/Juicer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Juicer:Hi-C数据处理分析的利器</title>
+    <link href="https://YouLab19.github.io/2019-11-02-Juicer-Hi-C%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E5%88%86%E6%9E%90%E7%9A%84%E5%88%A9%E5%99%A8/"/>
+    <id>https://YouLab19.github.io/2019-11-02-Juicer-Hi-C数据处理分析的利器/</id>
+    <published>2019-11-02T14:50:11.000Z</published>
+    <updated>2019-11-04T06:43:15.037Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Juicer:Hi-C数据处理分析的利器&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="Juicer" scheme="https://YouLab19.github.io/all-tags/Juicer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用HiCUP进行Hi-C数据预处理 </title>
+    <link href="https://YouLab19.github.io/2019-11-02-%E4%BD%BF%E7%94%A8HiCUP%E8%BF%9B%E8%A1%8CHi-C%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/"/>
+    <id>https://YouLab19.github.io/2019-11-02-使用HiCUP进行Hi-C数据预处理/</id>
+    <published>2019-11-02T14:49:55.000Z</published>
+    <updated>2019-11-04T06:44:26.753Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用HiCUP进行Hi-C数据预处理&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="HiCUP" scheme="https://YouLab19.github.io/all-tags/HiCUP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Promoter Capture Hi-C:研究启动子区染色质互作的利器</title>
+    <link href="https://YouLab19.github.io/2019-11-02-Promoter-Capture-Hi-C-%E7%A0%94%E7%A9%B6%E5%90%AF%E5%8A%A8%E5%AD%90%E5%8C%BA%E6%9F%93%E8%89%B2%E8%B4%A8%E4%BA%92%E4%BD%9C%E7%9A%84%E5%88%A9%E5%99%A8/"/>
+    <id>https://YouLab19.github.io/2019-11-02-Promoter-Capture-Hi-C-研究启动子区染色质互作的利器/</id>
+    <published>2019-11-02T14:49:38.000Z</published>
+    <updated>2019-11-04T06:49:50.983Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Promoter Capture Hi-C:研究启动子区染色质互作的利器&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="Promoter Capture Hi-C" scheme="https://YouLab19.github.io/all-tags/Promoter-Capture-Hi-C/"/>
+    
+      <category term="启动子区染色质互作" scheme="https://YouLab19.github.io/all-tags/%E5%90%AF%E5%8A%A8%E5%AD%90%E5%8C%BA%E6%9F%93%E8%89%B2%E8%B4%A8%E4%BA%92%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chromatin loops:染色质环简介</title>
+    <link href="https://YouLab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"/>
+    <id>https://YouLab19.github.io/2019-11-02-chromatin-loops-染色质环简介/</id>
+    <published>2019-11-02T14:49:25.000Z</published>
+    <updated>2019-11-04T06:49:38.802Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;chromatin loops:染色质环简介&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="chromatin loops" scheme="https://YouLab19.github.io/all-tags/chromatin-loops/"/>
+    
+      <category term="染色质环" scheme="https://YouLab19.github.io/all-tags/%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TAD:拓扑关联结构域简介</title>
+    <link href="https://YouLab19.github.io/2019-11-02-TAD-%E6%8B%93%E6%89%91%E5%85%B3%E8%81%94%E7%BB%93%E6%9E%84%E5%9F%9F%E7%AE%80%E4%BB%8B/"/>
+    <id>https://YouLab19.github.io/2019-11-02-TAD-拓扑关联结构域简介/</id>
+    <published>2019-11-02T14:49:09.000Z</published>
+    <updated>2019-11-04T06:48:41.459Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;TAD: 拓扑关联结构域简介&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="TAD" scheme="https://YouLab19.github.io/all-tags/TAD/"/>
+    
+      <category term="拓扑结构域" scheme="https://YouLab19.github.io/all-tags/%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A/B compartment:染色质区室简介</title>
+    <link href="https://YouLab19.github.io/2019-11-02-A-B-compartment-%E6%9F%93%E8%89%B2%E8%B4%A8%E5%8C%BA%E5%AE%A4%E7%AE%80%E4%BB%8B/"/>
+    <id>https://YouLab19.github.io/2019-11-02-A-B-compartment-染色质区室简介/</id>
+    <published>2019-11-02T14:48:53.000Z</published>
+    <updated>2019-11-04T06:47:42.805Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;A/B compartment:染色质区室简介&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="A/B compartment" scheme="https://YouLab19.github.io/all-tags/A-B-compartment/"/>
+    
+      <category term="染色质区室" scheme="https://YouLab19.github.io/all-tags/%E6%9F%93%E8%89%B2%E8%B4%A8%E5%8C%BA%E5%AE%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解密Hi-C数据分析中的分辨率</title>
+    <link href="https://YouLab19.github.io/2019-11-02-%E8%A7%A3%E5%AF%86Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%AD%E7%9A%84%E5%88%86%E8%BE%A8%E7%8E%87/"/>
+    <id>https://YouLab19.github.io/2019-11-02-解密Hi-C数据分析中的分辨率/</id>
+    <published>2019-11-02T14:42:23.000Z</published>
+    <updated>2019-11-04T06:47:12.645Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;解密Hi-C数据分析中的分辨率&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="分辨率" scheme="https://YouLab19.github.io/all-tags/%E5%88%86%E8%BE%A8%E7%8E%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>3C的衍生技术简介</title>
+    <link href="https://YouLab19.github.io/2019-11-02-3C%E7%9A%84%E8%A1%8D%E7%94%9F%E6%8A%80%E6%9C%AF%E7%AE%80%E4%BB%8B/"/>
+    <id>https://YouLab19.github.io/2019-11-02-3C的衍生技术简介/</id>
+    <published>2019-11-02T14:37:22.000Z</published>
+    <updated>2020-04-04T13:26:43.089Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;3C的衍生技术简介&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="3C" scheme="https://YouLab19.github.io/all-tags/3C/"/>
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chromosome conformation capture:染色质构象捕获技术</title>
+    <link href="https://YouLab19.github.io/2019-11-02-chromosome-conformation-capture-%E6%9F%93%E8%89%B2%E8%B4%A8%E6%9E%84%E8%B1%A1%E6%8D%95%E8%8E%B7%E6%8A%80%E6%9C%AF/"/>
+    <id>https://YouLab19.github.io/2019-11-02-chromosome-conformation-capture-染色质构象捕获技术/</id>
+    <published>2019-11-02T14:31:01.000Z</published>
+    <updated>2019-11-04T06:45:17.742Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;chromosome conformation capture:染色质构象捕获技术&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="chromosome conformation capture" scheme="https://YouLab19.github.io/all-tags/chromosome-conformation-capture/"/>
+    
+      <category term="染色质构象捕获技术" scheme="https://YouLab19.github.io/all-tags/%E6%9F%93%E8%89%B2%E8%B4%A8%E6%9E%84%E8%B1%A1%E6%8D%95%E8%8E%B7%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chromosome-territories:染色质疆域简介</title>
+    <link href="https://YouLab19.github.io/2019-11-02-chromosome-territories-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%96%86%E5%9F%9F%E7%AE%80%E4%BB%8B/"/>
+    <id>https://YouLab19.github.io/2019-11-02-chromosome-territories-染色质疆域简介/</id>
+    <published>2019-11-02T14:22:39.000Z</published>
+    <updated>2019-11-04T06:44:51.933Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;chromosome-territories:染色质疆域简介&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hi-C数据分析" scheme="https://YouLab19.github.io/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+    
+      <category term="Hi-C" scheme="https://YouLab19.github.io/all-tags/Hi-C/"/>
+    
+      <category term="chromosome-territories" scheme="https://YouLab19.github.io/all-tags/chromosome-territories/"/>
+    
+      <category term="染色质疆域" scheme="https://YouLab19.github.io/all-tags/%E6%9F%93%E8%89%B2%E8%B4%A8%E7%96%86%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Single Cell ATAC Install and Usage</title>
+    <link href="https://YouLab19.github.io/2019-10-30-Single_Cell_ATAC_Usage/"/>
+    <id>https://YouLab19.github.io/2019-10-30-Single_Cell_ATAC_Usage/</id>
+    <published>2019-10-29T16:00:00.000Z</published>
+    <updated>2019-11-04T06:52:10.607Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Single Cell ATAC Install and Usage&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Single-Cell-RNA-Sequencing" scheme="https://YouLab19.github.io/all-categories/Single-Cell-RNA-Sequencing/"/>
+    
+    
+      <category term="scRNA-Seq" scheme="https://YouLab19.github.io/all-tags/scRNA-Seq/"/>
+    
+      <category term="ATAC" scheme="https://YouLab19.github.io/all-tags/ATAC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SCALE准确鉴定单细胞ATAC-seq数据中染色质开放特征</title>
+    <link href="https://YouLab19.github.io/2019-10-30-SCALE%E5%87%86%E7%A1%AE%E9%89%B4%E5%AE%9A%E5%8D%95%E7%BB%86%E8%83%9EATAC-seq%E6%95%B0%E6%8D%AE%E4%B8%AD%E6%9F%93%E8%89%B2%E8%B4%A8%E5%BC%80%E6%94%BE%E7%89%B9%E5%BE%81/"/>
+    <id>https://YouLab19.github.io/2019-10-30-SCALE准确鉴定单细胞ATAC-seq数据中染色质开放特征/</id>
+    <published>2019-10-29T16:00:00.000Z</published>
+    <updated>2019-11-04T06:50:23.246Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;SCALE准确鉴定单细胞ATAC-seq数据中染色质开放特征&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Single-Cell-RNA-Sequencing" scheme="https://YouLab19.github.io/all-categories/Single-Cell-RNA-Sequencing/"/>
+    
+    
+      <category term="scRNA-Seq" scheme="https://YouLab19.github.io/all-tags/scRNA-Seq/"/>
+    
+      <category term="ATAC" scheme="https://YouLab19.github.io/all-tags/ATAC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PCA analysis using GCAT</title>
+    <link href="https://YouLab19.github.io/2019-10-22-PCA_GCAT/"/>
+    <id>https://YouLab19.github.io/2019-10-22-PCA_GCAT/</id>
+    <published>2019-10-21T16:00:00.000Z</published>
+    <updated>2019-11-04T06:52:23.182Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PCA analysis using GCAT&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="PCA" scheme="https://YouLab19.github.io/all-categories/PCA/"/>
+    
+    
+      <category term="PCA" scheme="https://YouLab19.github.io/all-tags/PCA/"/>
+    
+      <category term="GCAT" scheme="https://YouLab19.github.io/all-tags/GCAT/"/>
+    
+  </entry>
+  
+</feed>
