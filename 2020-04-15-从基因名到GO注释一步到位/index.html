@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="You&#39;s blog">
-    <title>chromatin loops:染色质环简介 - You&#39;s blog</title>
+    <title>从基因名到GO注释一步到位 - You&#39;s blog</title>
     <meta name="author" content="Dr.You">
     
     
@@ -15,25 +15,17 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dr.You","sameAs":["https://github.com/YouLab19/Youlab19.github.io"],"image":"you.jpg"},"articleBody":"chromatin loops:染色质环简介\n\n\n\n\n\n利用5kb分辨率的Hi-C基因组互作图谱，科学家识别到了chromatin loop这种染色质结构，文章发表在cell上,标题如下:**A 3D Map of the Human Genome at Kilobase Resolution Reveals Principles of Chromatin Looping\n通过对不同分辨率的Hi-C图谱进行分析，检测到了不同层级的染色质结构，从高到低依次为A/B compartments, subcompartments, TAD, chromation loop。Hi-C图谱和染色质结构模型的对应关系如下:\n\n\n早期研究中利用1MB的Hi-C图谱 ，定义了每条染色质包含了A和B两个compartments。该文章中对100kb分辨率的Hi-C图谱进行聚类分析，发现A/B compartments进一步分成了6个子类，即subcompartments。对每条染色质的Hi-C图谱进行不同算法的聚类分析，除了19号染色质外，都得到了5个cluster，对于19号染色质，得到了6个cluster。\n通过分析这些subcompartments与A/B compartments的关系，发现其中2个属于A compartments, 标记为A1和A2, 另外4个属于B comprtmants, 标记为B1, B2, B3, B4。\n对于TAD拓扑关联结构域的识别，首创了一种ArrowHead算法，核心是对归一化之后的交互矩阵进行变换，变化的公式如下:\n\n\n和DI的算法类似，i-d和i+d分别代表上下游的两个bin, 如果i和上游bin互作频率高，则A值为正数，如果和下游bin互作频率高，则A值为负数，如果相等，则为0。示意如下:\n\n\nA图中的正方形区域为一个TAD domain, 经过转换后，变成了图B所示的形状。对应到整个互作矩阵上，看上去就是图E所示的箭头型。利用动态规划算法，识别变换后矩阵中的箭头区域，就可以预测TAD domain。文章中识别到的TAD domain,长度在40kb-3Mb，中位数为185kb。\n对于染色质环，定义为Hi-C图谱中互作频率比周围相邻区域都高的格子区域，这样的区域称之为peak , 而对应的染色质区域称之为peak loci，如下图中蓝色圆点标记的区域:\n\n\n如上图所示，通过与四周区域的交互频率进行比较鉴定peak区域，这要去HI-C图谱的分辨率在5kb以下。对于全基因组互作图谱而言，这个计算量是非常大的，文章作者也提供了一种名为HiCCUPS的算法，集成在了开发的juicer软件中。\n进一步比较不同细胞系和不同物种间的染色质环区域，结果如下:\n\n\n发现在不同细胞系间相对稳定，在物种间也具有一定进化保守性。对染色质环的分布位置进行分析，发现其处于TAD边界处。进一步分析发现染色质环中有很大部分为promoter-enhancer loops， 这也解释了增强子对靶基因的调控机制，虽然增强子与靶基因线性距离很远，但是增强子与靶基因启动子位于一个染色质环上，空间距离近，通过与启动子结合调控靶基因。\n对染色质环对应区域富集的各种mark进行分析，发现其富集CTCF等转录因子, 如下图所示:\n\n\n对于染色质环的空间结构，提出了如下模型:\n\n通过构建5kb以下分辨率的Hi-C图谱，可以识别染色质环这种染色质结构单元。\n","dateCreated":"2019-11-02T22:49:25+08:00","dateModified":"2019-11-04T14:49:38+08:00","datePublished":"2019-11-02T22:49:25+08:00","description":"chromatin loops:染色质环简介","headline":"chromatin loops:染色质环简介","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"},"publisher":{"@type":"Organization","name":"Dr.You","sameAs":["https://github.com/YouLab19/Youlab19.github.io"],"image":"you.jpg","logo":{"@type":"ImageObject","url":"you.jpg"}},"url":"https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/","keywords":"Hi-C, chromatin loops, 染色质环"}</script>
-    <meta name="description" content="chromatin loops:染色质环简介">
-<meta name="keywords" content="Hi-C,chromatin loops,染色质环">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dr.You","sameAs":["https://github.com/YouLab19/Youlab19.github.io"],"image":"you.jpg"},"articleBody":"从基因名到GO注释一步到位\n\n\n\n\n\n\n\n大部分的生物学高通量数据处理后都是得到基因集，不管是上调下调表达基因集，还是共表达的模块基因集，都是需要注释到生物学功能数据库来看基因集的意义，最常见的是 GO/KEGG数据库啦，还有很多其它在MsigDB的，比如reactome和biocarta数据库等等。\n\n\n\n这样分析起来就很麻烦，尤其是GO数据库，还有 BP,CC,MF的区别，这个时候推荐使用Y叔的神器，使用\n\n\n\n\n\n","dateCreated":"2020-04-15T22:08:21+08:00","dateModified":"2020-04-15T22:41:25+08:00","datePublished":"2020-04-15T22:08:21+08:00","description":"从基因名到GO注释一步到位","headline":"从基因名到GO注释一步到位","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"},"publisher":{"@type":"Organization","name":"Dr.You","sameAs":["https://github.com/YouLab19/Youlab19.github.io"],"image":"you.jpg","logo":{"@type":"ImageObject","url":"you.jpg"}},"url":"https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/","keywords":"GO-KEGG, R绘图"}</script>
+    <meta name="description" content="从基因名到GO注释一步到位">
+<meta name="keywords" content="GO-KEGG,R绘图">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="chromatin loops:染色质环简介">
-<meta property="og:url" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;index.html">
+<meta property="og:title" content="从基因名到GO注释一步到位">
+<meta property="og:url" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D&#x2F;index.html">
 <meta property="og:site_name" content="You&#39;s blog">
-<meta property="og:description" content="chromatin loops:染色质环简介">
+<meta property="og:description" content="从基因名到GO注释一步到位">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;8.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;2.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;3.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;4.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;5.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;6.png">
-<meta property="og:image" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;7.png">
-<meta property="og:updated_time" content="2019-11-04T06:49:38.802Z">
+<meta property="og:updated_time" content="2020-04-15T14:41:25.486Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;youlab19.github.io&#x2F;2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B&#x2F;8.png">
     
     
         
@@ -226,20 +218,20 @@
         <div class="post-header main-content-wrap text-center">
     
         <h1 class="post-title">
-            chromatin loops:染色质环简介
+            从基因名到GO注释一步到位
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2019-11-02T22:49:25+08:00">
+    <time datetime="2020-04-15T22:08:21+08:00">
 	
-		    11月 02, 2019
+		    4月 15, 2020
     	
     </time>
     
         <span>发布在 </span>
         
-    <a class="category-link" href="/all-categories/Hi-C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">Hi-C数据分析</a>
+    <a class="category-link" href="/all-categories/GO-KEGG%E5%AF%8C%E9%9B%86%E5%88%86%E6%9E%90/">GO-KEGG富集分析</a>
 
 
     
@@ -251,40 +243,25 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            <p>chromatin loops:染色质环简介</p>
+            <p>从基因名到GO注释一步到位</p>
 <a id="more"></a>
 
 
 <h1 id="table-of-contents">目录</h1>
 <hr>
-<p>利用5kb分辨率的Hi-C基因组互作图谱，科学家识别到了chromatin loop这种染色质结构，文章发表在cell上,标题如下:<br>**<a href="https://www.cell.com/fulltext/S0092-8674(14)01497-401497-4" target="_blank" rel="noopener">A 3D Map of the Human Genome at Kilobase Resolution Reveals Principles of Chromatin Looping</a></p>
-<p>通过对不同分辨率的Hi-C图谱进行分析，检测到了不同层级的染色质结构，从高到低依次为A/B compartments, subcompartments, TAD, chromation loop。Hi-C图谱和染色质结构模型的对应关系如下:</p>
+<font face="宋体" color=black size=4>
+<table><tr><td bgcolor=lightblue>
+大部分的生物学高通量数据处理后都是得到基因集，不管是上调下调表达基因集，还是共表达的模块基因集，都是需要注释到生物学功能数据库来看基因集的意义，最常见的是<font color=darkgreen face="黑体"> GO/KEGG数据库</font>啦，还有很多其它在<font color=darkgreen face="黑体">MsigDB</font>的，比如<font color=darkgreen face="黑体">reactome和biocarta数据库</font>等等。
+</td></tr></table>
+</font>
+<font face="宋体" color=black size=4>
+这样分析起来就很麻烦，尤其是GO数据库，还有 BP,CC,MF的区别，这个时候推荐使用Y叔的神器，使用
 
 
-<p>早期研究中利用1MB的Hi-C图谱 ，定义了每条染色质包含了A和B两个compartments。该文章中对100kb分辨率的Hi-C图谱进行聚类分析，发现A/B compartments进一步分成了6个子类，即subcompartments。对每条染色质的Hi-C图谱进行不同算法的聚类分析，除了19号染色质外，都得到了5个cluster，对于19号染色质，得到了6个cluster。</p>
-<p>通过分析这些subcompartments与A/B compartments的关系，发现其中2个属于A compartments, 标记为A1和A2, 另外4个属于B comprtmants, 标记为B1, B2, B3, B4。</p>
-<p>对于TAD拓扑关联结构域的识别，首创了一种<code>ArrowHead</code>算法，核心是对归一化之后的交互矩阵进行变换，变化的公式如下:</p>
-<img src="/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/8.png" class="">
 
-<p>和DI的算法类似，i-d和i+d分别代表上下游的两个bin, 如果i和上游bin互作频率高，则A值为正数，如果和下游bin互作频率高，则A值为负数，如果相等，则为0。示意如下:</p>
-<img src="/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/2.png" class="">
 
-<p>A图中的正方形区域为一个TAD domain, 经过转换后，变成了图B所示的形状。对应到整个互作矩阵上，看上去就是图E所示的箭头型。利用动态规划算法，识别变换后矩阵中的箭头区域，就可以预测TAD domain。文章中识别到的TAD domain,长度在40kb-3Mb，中位数为185kb。</p>
-<p>对于染色质环，定义为Hi-C图谱中互作频率比周围相邻区域都高的格子区域，这样的区域称之为peak , 而对应的染色质区域称之为peak loci，如下图中蓝色圆点标记的区域:</p>
-<img src="/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/3.png" class="">
 
-<p>如上图所示，通过与四周区域的交互频率进行比较鉴定peak区域，这要去HI-C图谱的分辨率在5kb以下。对于全基因组互作图谱而言，这个计算量是非常大的，文章作者也提供了一种名为HiCCUPS的算法，集成在了开发的juicer软件中。</p>
-<p>进一步比较不同细胞系和不同物种间的染色质环区域，结果如下:</p>
-<img src="/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/4.png" class="">
-<img src="/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/5.png" class="">
-<p>发现在不同细胞系间相对稳定，在物种间也具有一定进化保守性。对染色质环的分布位置进行分析，发现其处于TAD边界处。进一步分析发现染色质环中有很大部分为promoter-enhancer loops， 这也解释了增强子对靶基因的调控机制，虽然增强子与靶基因线性距离很远，但是增强子与靶基因启动子位于一个染色质环上，空间距离近，通过与启动子结合调控靶基因。</p>
-<p>对染色质环对应区域富集的各种mark进行分析，发现其富集CTCF等转录因子, 如下图所示:</p>
-<img src="/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/6.png" class="">
-
-<p>对于染色质环的空间结构，提出了如下模型:</p>
-<img src="/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/7.png" class="">
-<p>通过构建5kb以下分辨率的Hi-C图谱，可以识别染色质环这种染色质结构单元。</p>
-
+</font>
             
 
 
@@ -295,7 +272,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">标签</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/all-tags/Hi-C/" rel="tag">Hi-C</a> <a class="tag tag--primary tag--small t-link" href="/all-tags/chromatin-loops/" rel="tag">chromatin loops</a> <a class="tag tag--primary tag--small t-link" href="/all-tags/%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF/" rel="tag">染色质环</a>
+    <a class="tag tag--primary tag--small t-link" href="/all-tags/GO-KEGG/" rel="tag">GO-KEGG</a> <a class="tag tag--primary tag--small t-link" href="/all-tags/R%E7%BB%98%E5%9B%BE/" rel="tag">R绘图</a>
 
             </div>
         
@@ -305,14 +282,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2019-11-02-Promoter-Capture-Hi-C-%E7%A0%94%E7%A9%B6%E5%90%AF%E5%8A%A8%E5%AD%90%E5%8C%BA%E6%9F%93%E8%89%B2%E8%B4%A8%E4%BA%92%E4%BD%9C%E7%9A%84%E5%88%A9%E5%99%A8/"
-                    data-tooltip="Promoter Capture Hi-C:研究启动子区染色质互作的利器"
-                    aria-label="上一篇: Promoter Capture Hi-C:研究启动子区染色质互作的利器"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                     </a>
@@ -322,9 +296,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2019-11-02-TAD-%E6%8B%93%E6%89%91%E5%85%B3%E8%81%94%E7%BB%93%E6%9E%84%E5%9F%9F%E7%AE%80%E4%BB%8B/"
-                    data-tooltip="TAD:拓扑关联结构域简介"
-                    aria-label="下一篇: TAD:拓扑关联结构域简介"
+                    href="/2020-01-02-%E8%8A%AF%E7%89%87%E6%8E%A2%E9%92%88%E5%BA%8F%E5%88%97%E7%9A%84%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B3%A8%E9%87%8A/"
+                    data-tooltip="芯片探针序列的基因组注释"
+                    aria-label="下一篇: 芯片探针序列的基因组注释"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
@@ -349,7 +323,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -362,7 +336,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -375,7 +349,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                    target="new" href="https://plus.google.com/share?url=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                     title="分享到 Google+"
                     aria-label="分享到 Google+"
                 >
@@ -388,7 +362,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                     title="分享到 Weibo"
                     aria-label="分享到 Weibo"
                 >
@@ -429,14 +403,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2019-11-02-Promoter-Capture-Hi-C-%E7%A0%94%E7%A9%B6%E5%90%AF%E5%8A%A8%E5%AD%90%E5%8C%BA%E6%9F%93%E8%89%B2%E8%B4%A8%E4%BA%92%E4%BD%9C%E7%9A%84%E5%88%A9%E5%99%A8/"
-                    data-tooltip="Promoter Capture Hi-C:研究启动子区染色质互作的利器"
-                    aria-label="上一篇: Promoter Capture Hi-C:研究启动子区染色质互作的利器"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                     </a>
@@ -446,9 +417,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2019-11-02-TAD-%E6%8B%93%E6%89%91%E5%85%B3%E8%81%94%E7%BB%93%E6%9E%84%E5%9F%9F%E7%AE%80%E4%BB%8B/"
-                    data-tooltip="TAD:拓扑关联结构域简介"
-                    aria-label="下一篇: TAD:拓扑关联结构域简介"
+                    href="/2020-01-02-%E8%8A%AF%E7%89%87%E6%8E%A2%E9%92%88%E5%BA%8F%E5%88%97%E7%9A%84%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%B3%A8%E9%87%8A/"
+                    data-tooltip="芯片探针序列的基因组注释"
+                    aria-label="下一篇: 芯片探针序列的基因组注释"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
@@ -473,7 +444,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -486,7 +457,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -499,7 +470,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                    target="new" href="https://plus.google.com/share?url=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                     title="分享到 Google+"
                     aria-label="分享到 Google+"
                 >
@@ -512,7 +483,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                    target="new" href="http://service.weibo.com/share/share.php?&amp;title=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                     title="分享到 Weibo"
                     aria-label="分享到 Weibo"
                 >
@@ -544,7 +515,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                         aria-label="分享到 Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>分享到 Facebook</span>
@@ -557,7 +528,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                        href="https://twitter.com/intent/tweet?text=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                         aria-label="分享到 Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
@@ -570,7 +541,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                        href="https://plus.google.com/share?url=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                         aria-label="分享到 Google+"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>分享到 Google+</span>
@@ -583,7 +554,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="http://service.weibo.com/share/share.php?&amp;title=https://youlab19.github.io/2019-11-02-chromatin-loops-%E6%9F%93%E8%89%B2%E8%B4%A8%E7%8E%AF%E7%AE%80%E4%BB%8B/"
+                        href="http://service.weibo.com/share/share.php?&amp;title=https://youlab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"
                         aria-label="分享到 Weibo"
                     >
                         <i class="fab fa-weibo" aria-hidden="true"></i><span>分享到 Weibo</span>
