@@ -248,8 +248,8 @@
 
     
     <div class="post-content markdown">
-        <div class="main-content-wrap">
-            <p>sRNAnalyzer–A pipeline for small RNA sequencing data analysis</p>
+		<div class="main-content-wrap">
+			<p>sRNAnalyzer–A pipeline for small RNA sequencing data analysis</p>
 <a id="more"></a>
 
 
@@ -340,11 +340,15 @@ all_miRNA_sub</code></pre><p>Then, making sure that you are in the directory con
 <pre><code>summarize.pl DB_config.conf --project my_project</code></pre><p>This command will sum the feature and profile result from individual samples into result files for all samples. my_project is the name of the project, so all of the result files with start with the prefix my_project_. The general form of the summarize command is,</p>
 <pre><code>summarize.pl &lt;db-config-file&gt; &lt;sample-order-file&gt; --project &lt;project-name&gt;</code></pre><p>where the db-config-file is required, and the sample-order-file and project-name are both optional. The <code>db-config-file</code> is the database configuration file discussed above, and the <code>sample-order-file</code> specifies the order of the samples in the result files. If the sample order file is not provided, the order is alphabetical. The <code>summarize.pl</code> command has two additional options, <code>--miRNA</code> and <code>--exogenous</code>. Use the –miRNA flag if you would like to summarize miRNA separately and get information about possible miRNA SNPs. Use the <code>--exogenous</code> flag if you would like to summarize exogenous reads, including summarizing by taxonomy information. Note that the <code>--exogenous</code> option is only available if the MainDBs or NCBI_NonHuman databases are installed.</p>
 
-            
+			
 
 
-        </div>
-    </div>
+			<!-- 添加的部分 -->
+			<!-- copyright -->
+			
+			<!-- copyright -->
+		</div>
+	</div>
     <div id="post-footer" class="post-footer main-content-wrap">
         
             <div class="post-footer-tags">

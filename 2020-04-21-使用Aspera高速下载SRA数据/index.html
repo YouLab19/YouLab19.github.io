@@ -239,8 +239,8 @@
 
     
     <div class="post-content markdown">
-        <div class="main-content-wrap">
-            <p>使用Aspera高速下载SRA数据</p>
+		<div class="main-content-wrap">
+			<p>使用Aspera高速下载SRA数据</p>
 <a id="more"></a>
 
 
@@ -310,11 +310,15 @@ On many Linux systems the default firewall can be configured with iptables. You 
 /vol1/fastq/SRR576/SRR576934/SRR576934.fastq.gz</code></pre><p>然后使用命令:</p>
 <pre><code>ascp -QT -k1 -l 100M -i ~/asperaweb_id_dsa.openssh --mode recv --host fasp.sra.ebi.ac.uk --user era-fasp --file-list file-list</code></pre><p>这其中，还有<code>-QT</code>参数，表示开启断点续传，-l带宽限制，启用该设置能够再次加快速度，从原来的10M/s到达20+M/s。</p>
 </font>
-            
+			
 
 
-        </div>
-    </div>
+			<!-- 添加的部分 -->
+			<!-- copyright -->
+			
+			<!-- copyright -->
+		</div>
+	</div>
     <div id="post-footer" class="post-footer main-content-wrap">
         
         
