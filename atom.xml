@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://YouLab19.github.io/"/>
-  <updated>2020-04-15T15:28:35.238Z</updated>
+  <updated>2020-05-03T05:43:07.120Z</updated>
   <id>https://YouLab19.github.io/</id>
   
   <author>
@@ -17,17 +17,70 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>sRNAnalyzer</title>
+    <link href="https://YouLab19.github.io/2020-05-02-sRNAnalyzer/"/>
+    <id>https://YouLab19.github.io/2020-05-02-sRNAnalyzer/</id>
+    <published>2020-05-02T15:49:27.000Z</published>
+    <updated>2020-05-03T05:43:07.120Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;sRNAnalyzer–A pipeline for small RNA sequencing data analysis&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="RNA-seq" scheme="https://YouLab19.github.io/all-categories/RNA-seq/"/>
+    
+    
+      <category term="small RNA-seq" scheme="https://YouLab19.github.io/all-tags/small-RNA-seq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Aspera高速下载SRA数据</title>
+    <link href="https://YouLab19.github.io/2020-04-21-%E4%BD%BF%E7%94%A8Aspera%E9%AB%98%E9%80%9F%E4%B8%8B%E8%BD%BDSRA%E6%95%B0%E6%8D%AE/"/>
+    <id>https://YouLab19.github.io/2020-04-21-使用Aspera高速下载SRA数据/</id>
+    <published>2020-04-21T14:12:38.000Z</published>
+    <updated>2020-05-03T05:43:58.979Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用Aspera高速下载SRA数据&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>代码分析 | Sing-cell Sequencing QC详解</title>
+    <link href="https://YouLab19.github.io/2020-04-20-%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90-Sing-cell-Sequencing-QC%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://YouLab19.github.io/2020-04-20-代码分析-Sing-cell-Sequencing-QC详解/</id>
+    <published>2020-04-20T15:49:31.000Z</published>
+    <updated>2020-05-03T05:43:32.048Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;代码分析 | Sing-cell Sequencing QC详解&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>从基因名到GO注释一步到位</title>
     <link href="https://YouLab19.github.io/2020-04-15-%E4%BB%8E%E5%9F%BA%E5%9B%A0%E5%90%8D%E5%88%B0GO%E6%B3%A8%E9%87%8A%E4%B8%80%E6%AD%A5%E5%88%B0%E4%BD%8D/"/>
     <id>https://YouLab19.github.io/2020-04-15-从基因名到GO注释一步到位/</id>
     <published>2020-04-15T14:08:21.000Z</published>
-    <updated>2020-04-15T15:28:35.238Z</updated>
+    <updated>2020-05-03T05:44:14.695Z</updated>
     
     <summary type="html">
     
-      &lt;font face=&quot;黑体&quot; color=black size=4&gt;
-从基因名到GO注释一步到位
-&lt;/font&gt;
+      &lt;p&gt;从基因名到GO注释一步到位&lt;/p&gt;
     
     </summary>
     
@@ -398,29 +451,6 @@
   </entry>
   
   <entry>
-    <title>Single Cell ATAC Install and Usage</title>
-    <link href="https://YouLab19.github.io/2019-10-30-Single_Cell_ATAC_Usage/"/>
-    <id>https://YouLab19.github.io/2019-10-30-Single_Cell_ATAC_Usage/</id>
-    <published>2019-10-29T16:00:00.000Z</published>
-    <updated>2019-11-04T06:52:10.607Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Single Cell ATAC Install and Usage&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Single-Cell-RNA-Sequencing" scheme="https://YouLab19.github.io/all-categories/Single-Cell-RNA-Sequencing/"/>
-    
-    
-      <category term="scRNA-Seq" scheme="https://YouLab19.github.io/all-tags/scRNA-Seq/"/>
-    
-      <category term="ATAC" scheme="https://YouLab19.github.io/all-tags/ATAC/"/>
-    
-  </entry>
-  
-  <entry>
     <title>SCALE准确鉴定单细胞ATAC-seq数据中染色质开放特征</title>
     <link href="https://YouLab19.github.io/2019-10-30-SCALE%E5%87%86%E7%A1%AE%E9%89%B4%E5%AE%9A%E5%8D%95%E7%BB%86%E8%83%9EATAC-seq%E6%95%B0%E6%8D%AE%E4%B8%AD%E6%9F%93%E8%89%B2%E8%B4%A8%E5%BC%80%E6%94%BE%E7%89%B9%E5%BE%81/"/>
     <id>https://YouLab19.github.io/2019-10-30-SCALE准确鉴定单细胞ATAC-seq数据中染色质开放特征/</id>
@@ -440,29 +470,6 @@
       <category term="scRNA-Seq" scheme="https://YouLab19.github.io/all-tags/scRNA-Seq/"/>
     
       <category term="ATAC" scheme="https://YouLab19.github.io/all-tags/ATAC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PCA analysis using GCAT</title>
-    <link href="https://YouLab19.github.io/2019-10-22-PCA_GCAT/"/>
-    <id>https://YouLab19.github.io/2019-10-22-PCA_GCAT/</id>
-    <published>2019-10-21T16:00:00.000Z</published>
-    <updated>2019-11-04T06:52:23.182Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;PCA analysis using GCAT&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="PCA" scheme="https://YouLab19.github.io/all-categories/PCA/"/>
-    
-    
-      <category term="PCA" scheme="https://YouLab19.github.io/all-tags/PCA/"/>
-    
-      <category term="GCAT" scheme="https://YouLab19.github.io/all-tags/GCAT/"/>
     
   </entry>
   
