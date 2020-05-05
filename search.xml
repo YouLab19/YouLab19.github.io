@@ -369,11 +369,11 @@
       
         <tags>
             
-            <tag> Hi-C </tag>
-            
             <tag> A/B compartment </tag>
             
             <tag> 染色质区室 </tag>
+            
+            <tag> Hi-C </tag>
             
         </tags>
       
@@ -425,9 +425,9 @@
       
         <tags>
             
-            <tag> 3C </tag>
-            
             <tag> Hi-C </tag>
+            
+            <tag> 3C </tag>
             
         </tags>
       
